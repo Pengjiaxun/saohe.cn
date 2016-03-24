@@ -1,0 +1,19 @@
+.header-cover{height: 45px;}
+
+.fl{float: left;}
+.fr{float: right;}
+
+.text-ellipsis{
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+.clearfix::after{
+	content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+    overflow: hidden;
+    font-size: 0;
+}
