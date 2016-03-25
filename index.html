@@ -15,7 +15,7 @@
 <!-- 页面1 -->
 <div class="main-background"></div>
 	<div class="main">
-		<div class="top"><!-- 顶部导航栏 -->
+		<div id="nav" class="top"><!-- 顶部导航栏 -->
 			<div class="topl fl">
 				<img class="fl" src="images/icon/saohe_logo.png" >
 				<div class="fl">
@@ -28,7 +28,7 @@
 						<li><a href="#introduce">角色介绍</a></li>
 						<li><a href="#partner">合作伙伴</a></li>
 						<li><a href="#manage">产品亮点</a></li>
-						<li><a href="#echo">评价曝光</a></li>
+						<li><a href="#echo">客户反馈</a></li>
 						<li><a  class="fr" href="">注册</a></li>
 					</ul>
 			</div>
@@ -36,7 +36,7 @@
 		<div class="main-content">
 			<div class="content-wrap">
 				<!-- 页面1内容1 -->
-				<div id="content1">
+				<div id="content1" style="top: 0;">
 					<div class="main-content-top" ><!-- 内容顶部 -->
 						<div class="main-content-topl">骚 董</div>
 						<div class="main-content-topr">
@@ -99,10 +99,12 @@
 
 	</div>
 	<!-- 二维码扫描 -->
-	<div id="toggle" class="code-msg">骚<br>盒<br>公<br>众<br>号</div>
-	<div id="code-img" class="code-img">
-		<div class="fl" style="width:208px;height: 140px;"></div>
-		<img class="fl" src="images/icon/app_download.png">
+	<!-- <div id="toggle" class="code-msg"></div> -->
+	<div class="code-msg">
+		<img class="code-sh" src="images/icon/gongzhonghao.png">
+	</div>
+	<div class="code-img">
+		<img class="code-sh" src="images/icon/app_download.png">
 	</div>
 
 <!-- 页面2 -->
@@ -113,17 +115,9 @@
 			<ul>
 				<li><img src="images/icon/茗香茶.png"></li>
 				<li><img src="images/icon/酒.png"></li>
-				<li><img src="images/icon/时间密码.png"></li>
-				<li><img src="images/icon/倾城记.png"></li>
-				<li><img src="images/icon/三菇凉.png"></li>
-			</ul>
-		</div>
-		<div class="p4">
-			<ul>
-				<li><img src="images/icon/小玩纸.png"></li>
 				<li><img src="images/icon/古老工艺.png"></li>
+				<li><img src="images/icon/时间密码.png"></li>
 				<li><img src="images/icon/花作.png"></li>
-				<li><img src="images/icon/金捷成.png"></li>
 				<li><img src="images/icon/芒果网.png"></li>
 			</ul>
 		</div>
@@ -177,19 +171,20 @@
 				<p>我们在追求的完美平台</p>
 		</div>
 		<div class="echor fr">
-			<img src="images/pic02.png">
+			<img class="pic" src="images/pic02.png">
 		</div>
 		<div class="clearfix"></div>
 		<div class="pic3 fr">
-			<img src="images/pic01.png" alt="">
-			<img src="images/pic03.png" alt="">
-			<img src="images/pic04.png" alt="">
+			<img class="pic" src="images/pic01.png" alt="">
+			<img class="pic" src="images/pic03.png" alt="">
+			<img class="pic" src="images/pic04.png" alt="">
 		</div>
+		<div class="clearfix"></div>
 
 	</div>
 <!-- 页面6 -->
 	<div class="copyright">
-		<img src="images/icon/saohe_logo.png">
+		<img src="images/icon/saohe_logo2.png">
 		<img src="images/icon/light.png">
 		<div class="copyright-bottom">
 			<p>中高联网络科技有限公© 2011-2016 版权所有    粤ICP备12037267号 鲁ICP备14007325号</p>
@@ -199,50 +194,88 @@
  	</div>
 </div>
 	<script type="text/javascript">
-		// var tag=true;
-		// $("#toggle").click(function () {
-		// 	if(tag){
-		// 		$("#code-img").stop(true, false).animate({"right": 0}, 500);
-		// 		tag=false;
-		// 	}
-		// 	else{
-		// 		$("#code-img").stop(true, false).animate({"right": -208}, 500);
-		// 		tag=true;
-		// 	}
-		// });
+		/*滚动渐隐渐现显示导航*/
+		$(window).scroll(function () {
+			var t=$(document).scrollTop();
+			if(t==0){
+				$("#nav").removeClass('bgcolor');
+				$("#nav").fadeIn("fast");
+			}
+			else if(t>100 && t<1040){
+				$("#nav").fadeOut("fast");
+				$("#nav").removeClass('bgcolor');
+			}
+			else if(t>1040 && t<1140){
+				$("#nav").addClass('bgcolor');
+				$("#nav").fadeIn("fast");
+			}
+			else if(t>1140 && t<1690){
+				$("#nav").fadeOut("fast");
+				$("#nav").removeClass('bgcolor');
+			}
+			else if(t>1690 && t<1790){
+				$("#nav").addClass('bgcolor');
+				$("#nav").fadeIn("fast");
+			}
+			else if(t>1790 && t<2670){
+				$("#nav").fadeOut("fast");
+				$("#nav").removeClass('bgcolor');
+			}
+			else if(t>2670 && t<2770){
+				$("#nav").addClass('bgcolor');
+				$("#nav").fadeIn("fast");
+			}
+			else if(t>2770 && t<3560){
+				$("#nav").fadeOut("fast");
+				$("#nav").removeClass('bgcolor');
+			}
+			else if(t>3560 && t<3660){
+				$("#nav").addClass('bgcolor');
+				$("#nav").fadeIn("fast");
+			}
+			else if(t>3660){
+				$("#nav").fadeOut("fast");
+				$("#nav").removeClass('bgcolor');
+			}
+
+		});
+
 		/*二维码显示*/
-		$("#toggle").mouseenter(function() {
-			$("#code-img").stop(true, false).animate({"right": 0}, 500);
+		$(".code-sh").mouseenter(function() {
+			$(this).parent().stop(true, false).animate({"right": 0}, 500);
 		});
-		$("#toggle").mouseout(function() {
-			$("#code-img").stop(true, false).animate({"right": -208}, 500);
+		$(".code-sh").mouseout(function() {
+			$(this).parent().stop(true, false).animate({"right": -157}, 500);
 		});
-		/*主页内容切换*/
+
+		/*主页内容和按钮状态切换*/
+		$(".bottom-nav").click(function(){
+			$(".bottom-nav").addClass('selected');
+			$(this).removeClass('selected');
+		});
 		$("#saodong").click(function () {
-			$("#content2").fadeOut("fast");
-			$("#content3").fadeOut("fast");
-			$("#content1").fadeIn("slow");
-			$("#saodong").removeClass("selected");
-			$("#saoke").addClass("selected");
-			$("#hehuoren").addClass("selected");
+			$("#content2").stop(true, false).animate({"top": 380}, 50);
+			$("#content3").stop(true, false).animate({"top": 380}, 50);
+			$("#content1").stop(true, false).animate({"top": 0}, 800);
 		});
 		$("#saoke").click(function () {
-			$("#content1").fadeOut("fast");
-			$("#content2").fadeOut("fast");
-			$("#content3").fadeIn("slow");
-			$("#saoke").removeClass("selected");
-			$("#saodong").addClass("selected");
-			$("#hehuoren").addClass("selected");
-
+			$("#content1").stop(true, false).animate({"top": 380}, 50);
+			$("#content2").stop(true, false).animate({"top": 380}, 50);
+			$("#content3").stop(true, false).animate({"top": 0}, 800);
 		});
 		$("#hehuoren").click(function () {
-			$("#content1").fadeOut("fast");
-			$("#content3").fadeOut("fast");
-			$("#content2").fadeIn("slow");
-			$("#hehuoren").removeClass("selected");
-			$("#saoke").addClass("selected");
-			$("#saodong").addClass("selected");
+			$("#content1").stop(true, false).animate({"top": 380}, 50);
+			$("#content3").stop(true, false).animate({"top": 380}, 50);
+			$("#content2").stop(true, false).animate({"top": 0}, 800);
+		});
 
+		/*选中图片浮起阴影效果*/
+		$(".pic").mouseenter(function(){
+			$(".pic").removeClass('imgselected');
+			$(this).addClass('imgselected');
+		});
+		$(".pic").mouseout(function(){
+			$(this).removeClass('imgselected');
 		});
 	</script>
 </body>
