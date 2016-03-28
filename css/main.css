@@ -1,6 +1,6 @@
 .container{
 	width: 100%;
-	min-width: 1000px;
+	min-width: 1200px;
 
 	position: relative;
 	overflow: hidden;
@@ -14,27 +14,26 @@ img{border:0}
 	width: 100%;
 	height: 1040px;
 }
-.main-background{
+.main-background,.bg-cover{
 	position: absolute;
 	width: 100%;
     height: 1040px;
-    background: url(../images/icon/saohe_home_bg.png);
-    background-color: rgba(0,0,0,0.6);
     overflow: hidden;
 }
+.main-background{ background: url(../images/icon/saohe_home_bg.png);}
+.bg-cover{background-color: rgba(0,0,0,0.6);}
 
 /*导航栏*/
 .top{
 	position: fixed;
 	z-index: 1000;
-	min-width: 1000px;
-	width: 100%;
+	width:100%;
+	min-width: 1200px;
 	height: 100px;
 	top: 0px;
-	/*position: absolute;*/
-	/* display: table-cell;
-	vertical-align: middle; */
-/*background-color: #666666;*/
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
 }
 .bgcolor{background-color: #666666;}
 .topl{
@@ -42,6 +41,10 @@ img{border:0}
 	font-size: 18px;
 	color: #fefdfe;
 	margin-top: 25px;
+	text-align: left;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
 }
 .topl p:last-child{font-size: 14px;}
 .topl img{
@@ -50,28 +53,32 @@ img{border:0}
 	margin-right: 15px;
 }
 .topr{
-	width:590px;
 	height: 45px;
-	margin-right: 60px;
-	/*padding-left: 50px;*/
+	text-align: right;
+	padding-right: 60px;
 	margin-top: 32px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
 }
 .topr li{
-	float: left;
+	float: right;
 	width:118px;
 	line-height: 45px;
 	text-align: left;
 	font-size: 20px;
  }
- .topr li a{color:#ffffff;}
- .topr li:last-child a{
+.topr li a{color:#ffffff;}
+.topr li a:hover{color:#c84bdf;}
+
+.topr li:first-child a{
  	display: inline-block;
  	width: 100px;
 	border: 1px solid #c84bdf;
 	border-radius:5px;
 	text-align: center;
 	/* font-size: 20px; */
-	color: #c84bdf;
+	color: #c84bdf!important;
  }
 
 /*主页内容*/
@@ -131,7 +138,7 @@ img{border:0}
 	width: 594px;
 	height:204px;
 	margin:0 auto;
-	margin-top:220px;
+	margin-top:200px;
 	position: relative;
 }
 .main-content-bottom img{
@@ -167,19 +174,15 @@ img{border:0}
 	right: -157px;
 	width: 208px;
 	height: 140px;
-
 }
+
 /*页面2*/
 .partner{
 	text-align: center;
 	height: 650px;
 	border-bottom: 1px solid #dbdbdb;
 }
-.p1{
-	padding-top: 115px;
-}
-
-.p1{font-size: 36px;color: #5c3164;}
+.p1{font-size: 36px;color: #5c3164;padding-top: 130px;}
 .p2{font-size: 28px;color: #666666;padding-top: 95px;}
 .p3,.p4{width: 1200px;margin:0 auto;}
 .p3{padding-top: 80px;}
@@ -187,70 +190,162 @@ img{border:0}
 .p3 li,.p4 li{
 	float: left;
 	width: 200px;
-
 }
 
 /*页面3*/
 .introduce{
+	width:100%;
 	height: 985px;
-	text-align: left;
+	/*text-align: left;*/
 	border-bottom: 1px solid #dbdbdb;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
 }
-.introduce h3,.manage h3,.echo h3{
+.introduce h3,.manage h3,.echo-up h3{
 	font-size: 50px;
 	color: #1a1a1a;
 	font-weight: normal;
 	margin-bottom: 50px;
 }
-.introl{margin-left: 85px;margin-top: 250px;}
+.introl{
+	/*margin-left: 85px;*/
+	margin-top: 250px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	/*text-align: left;*/
+}
+.intro-wrap{
+	width: 480px;
+	margin:0 auto;
+}
 .introl h4:first-of-type{padding-top: 130px}
 .manage h4:first-of-type{padding-top: 90px}
-.echo h4:first-of-type{padding-top: 55px;}
-.introl h4 img, .manage h4 img, .echo h4 img{
+.echo-up h4:first-of-type{padding-top: 55px;}
+.introl h4 img, .manage h4 img, .echo-up h4 img{
 	margin-right: 5px;
 	vertical-align: middle;
 }
-.introl h4,.manage h4,.echo h4{
+.introl h4,.manage h4,.echo-up h4{
 	font-size: 30px;
 	font-weight: normal;
 	color: #1a1a1a;
 }
-.introduce p,.manage p,.echo p{
+.introduce p,.manage p,.echo-up p{
 	font-size: 28px;
 	color: #666666;
 	/* text-align: left; */
 }
-.introl .intro-detail,.manage .intro-detail,.echo .intro-detail{
+.introl .intro-detail,.manage .intro-detail,.echo-up .intro-detail{
 	font-size: 24px;
 	color: #666666;
 	margin-top: 20px;
     margin-bottom: 35px;
 }
-.intror{margin-right: 90px;padding-top: 125px;}
+.intror{
+	/*margin-right: 90px;*/
+	padding-top: 125px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	text-align: center;
+}
+.intror img{
+	width: 100%;
+	max-width: 700px;
+}
+
 /*页面4*/
 .manage{
+	width: 100%;
 	height: 888px;
 	margin:0 auto;
 	border-bottom: 1px solid #dbdbdb;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
 }
-.managel{margin-left: 80px;margin-top: 125px;}
-.manager{width:600px;margin-right: 90px;margin-top: 150px;margin-bottom: 50px;}
+.managel{
+	text-align:center;
+	margin-top: 125px;
+	margin-right: 20px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+}
+.managel img{
+	width: 100%;
+	max-width:875px;
+	vertical-align:middle;
+}
+.manager{
+	/*width:600px;*/
+	min-width: 600px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+}
+.manager-wrap{
+	width:600px;
+	margin: 0 auto;
+}
+
 /*页面5*/
-.echo{
-	height: 1000px;
+.echo-up{
+	width: 100%;
+	height: 500px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
 }
 .echol{
-	padding-left:180px;
 	padding-top: 110px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	min-width: 500px;
 }
-.echor,.echo .pic3{
-	margin-right: 90px;
+.echor{
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	text-align: center;
+}
+ .echor img{
+	width: 100%;
+	max-width:880px;
+}
+.echol-wrap{
+	width: 500px;
+	height: 200px;
+	margin:0 auto;
+}
+.echor{
+	/*margin-right: 90px;*/
 	margin-top: 120px;
 }
-.echo .pic3{margin-top: 30px;}
-.pic3 img{vertical-align: middle;}
-.pic3 img:first-child{margin-right: 40px;}
-.pic3 img:last-child{margin-left: 40px;}
+.echo-down{
+	width: 100%;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	margin-bottom: 30px;
+}
+
+.echo-down .pic{
+	max-height: 310px;
+	margin-top: 30px;
+	-webkit-box-flex:1;
+	-moz-box-flex:1;
+	box-flex:1;
+	text-align: center;
+	padding-right: 15px;
+}
+.echo-down .pic:last-child{padding-right: 0px;}
+
 /*页面6*/
 .copyright{
 	/*position: absolute;*/
@@ -259,7 +354,6 @@ img{border:0}
 	/*bottom:0;*/
 	background: #5c3164;
 	text-align: center;
-
 }
 .imgselected{
   box-shadow:6px 6px 12px #333333;
