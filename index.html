@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-
+	<script type="text/javascript" src="js/rem.js"></script>
 </head>
 <body>
 <!-- 最外层包裹 -->
@@ -17,7 +17,7 @@
 <div class="main-background"></div>
 <div class="bg-cover"></div>
 
-	<div class="main">
+	<div id="page1" class="main">
 		<div id="nav" class="top" ><!-- 顶部导航栏 -->
 		<div class="topl" >
 			<img class="fl" src="images/icon/saohe_logo.png" >
@@ -31,12 +31,12 @@
 				<li><a  class="fr" href="" >注册</a></li>
 				<li><a id="btn-echo">客户反馈</a></li>
 				<li><a id="btn-manage">产品亮点</a></li>
-				<li><a id="btn-introduce">角色介绍</a></li>
 				<li><a id="btn-partner">合作伙伴</a></li>
+				<li><a id="btn-introduce">角色介绍</a></li>
 			</ul>
 		</div>
 	</div>
-		<div class="main-content">
+
 			<div class="content-wrap">
 				<!-- 页面1内容1 -->
 				<div id="content1" style="top: 0;">
@@ -53,7 +53,11 @@
 						<p>是骚品操盘手</p>
 						<p>是大众创业的主要角色身份</p>
 					</div>
+				<div class="main-content-button"><!-- 内容底部按钮 -->
+					<button>成为骚董</button>
 				</div>
+				</div>
+
 				<!-- 页面1内容2 -->
 				<div id="content2">
 					<div class="main-content-top" ><!-- 内容顶部 -->
@@ -87,18 +91,11 @@
 				</div>
 		</div>
 
-			<div class="main-content-button"><!-- 内容底部按钮 -->
-				<button>骚董接入</button>
-			</div>
 			<div class="main-content-bottom"><!-- 内容底部导航 -->
-				<div id="saoke" class="bottom-nav selected"></div>
-				<div id="saodong" class="bottom-nav"></div>
-				<div id="hehuoren" class="bottom-nav selected"></div>
-				<img src="images/icon/saoke.png">
-				<img src="images/icon/saodong.png" alt="">
-				<img src="images/icon/hehuoren.png" alt="">
+				<img class="img" id="saoke-img" src="images/icon/saoke_not.png" style="background:url(images/icon/icon_display.png);">
+				<img class="img" id="saodong-img" src="images/icon/saodong.png" alt="">
+				<img class="img" id="hehuoren-img" src="images/icon/hehuoren_not.png" alt="">
 			</div>
-		</div>
 
 	</div>
 	<!-- 二维码扫描 -->
@@ -112,7 +109,6 @@
 
 <!-- 页面2 -->
 	<div id="partner" class="partner">
-		<p class="p1">骚董</p>
 		<p class="p2">分享优品的合作伙伴</p>
 		<div class="p3">
 			<ul>
@@ -125,7 +121,7 @@
 			</ul>
 		</div>
 	</div>
-
+<div class="line"></div>
 <!-- 页面3 -->
 		<div id="introduce" class="introduce">
 			<div class="introl">
@@ -144,7 +140,7 @@
 				<img src="images/icon/app_display.png">
 			</div>
 		</div>
-
+<div class="line" style="position: relative;top:-13px;"></div>
 <!-- 页面4 -->
 		<div id="manage" class="manage">
 			<div class="managel">
@@ -165,7 +161,7 @@
 				</div>
 			</div>
 		</div>
-
+<div class="line"></div>
 <!-- 页面5 -->
 	<div id="echo" class="echo-up">
 		<div class="echol">
@@ -176,13 +172,16 @@
 			</div>
 		</div>
 		<div class="echor">
-			<img class="pic" src="images/pic02.png">
+			<img src="images/pic02.png">
+			<div class="echo-bottom-cover">
+				<div class="echor-bottom">
+					<img class="pic" src="images/pic03.png">
+				</div>
+				<div class="echor-bottom">
+					<img class="pic" src="images/pic04.png">
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="echo-down">
-		<div class="pic"><img src="images/pic01.png" alt=""></div>
-		<div class="pic"><img src="images/pic03.png" alt=""></div>
-		<div class="pic"><img src="images/pic04.png" alt=""></div>
 	</div>
 
 <!-- 页面6 -->
@@ -193,133 +192,10 @@
 			<p>中高联网络科技有限公© 2011-2016 版权所有    粤ICP备12037267号 鲁ICP备14007325号</p>
 		<p>邮箱：web@cardspay    客服：400-600-5151    地址：深圳市南山区学府路与科园路交汇处卫星大厦705</p>
 		</div>
-
  	</div>
 </div>
-<script type="text/javascript">
-	/*导航栏锚点平滑滚动*/
-	$("#btn-introduce").click(function() {
-		$("html,body").animate({scrollTop:$("#introduce").offset().top}, 500);
-		$(".topr li a").css("color","#ffffff");
-		$(this).css("color","red");
-	});
-	$("#btn-partner").click(function() {
-		$("html,body").animate({scrollTop:$("#partner").offset().top}, 500);
-		$(".topr li a").css("color","#ffffff");
-		$(this).css("color","red");
-	});
-	$("#btn-manage").click(function() {
-		$("html,body").animate({scrollTop:$("#manage").offset().top}, 500);
-		$(".topr li a").css("color","#ffffff");
-		$(this).css("color","red");
-	});
-	$("#btn-echo").click(function() {
-		$("html,body").animate({scrollTop:$("#echo").offset().top}, 500);
-		$(".topr li a").css("color","#ffffff");
-		$(this).css("color","red");
-	});
 
-	/*滚动渐隐渐现显示导航*/
-	$(window).scroll(function () {
-		var t=$(document).scrollTop();
-		if(t==0){
-			$("#nav").removeClass('bgcolor');
-			$("#nav").fadeIn("fast");
-			$(".topr li a").css("color","#ffffff");
+<script type="text/javascript" src="js/customer.js"></script>
 
-		}
-		else if(t>100 && t<1040){
-			$("#nav").fadeOut("fast");
-			$("#nav").removeClass('bgcolor');
-
-		}
-		else if(t>1040 && t<1140){
-			$("#nav").addClass('bgcolor');
-			$("#nav").fadeIn("fast");
-			$(".topr li a").css("color","#ffffff");
-			$("#btn-partner").css("color","red");
-		}
-		else if(t>1140 && t<1690){
-			$("#nav").fadeOut("fast");
-			$("#nav").removeClass('bgcolor');
-
-		}
-		else if(t>1690 && t<1790){
-			$("#nav").addClass('bgcolor');
-			$("#nav").fadeIn("fast");
-			$(".topr li a").css("color","#ffffff");
-			$("#btn-introduce").css("color","red");
-
-		}
-		else if(t>1790 && t<2670){
-			$("#nav").fadeOut("fast");
-			$("#nav").removeClass('bgcolor');
-
-		}
-		else if(t>2670 && t<2770){
-			$("#nav").addClass('bgcolor');
-			$("#nav").fadeIn("fast");
-			$(".topr li a").css("color","#ffffff");
-			$("#btn-manage").css("color","red");
-
-		}
-		else if(t>2770 && t<3560){
-			$("#nav").fadeOut("fast");
-			$("#nav").removeClass('bgcolor');
-
-		}
-		else if(t>3560 && t<3660){
-			$("#nav").addClass('bgcolor');
-			$("#nav").fadeIn("fast");
-			$(".topr li a").css("color","#ffffff");
-			$("#btn-echo").css("color","red");
-
-		}
-		else if(t>3660){
-			$("#nav").fadeOut("fast");
-			$("#nav").removeClass('bgcolor');
-
-		}
-
-	});
-
-	/*二维码显示*/
-	$(".code-sh").mouseenter(function() {
-		$(this).parent().stop(true, false).animate({"right": 0}, 500);
-	});
-	$(".code-sh").mouseout(function() {
-		$(this).parent().stop(true, false).animate({"right": -157}, 500);
-	});
-
-	/*主页内容和按钮状态切换*/
-	$(".bottom-nav").click(function(){
-		$(".bottom-nav").addClass('selected');
-		$(this).removeClass('selected');
-	});
-	$("#saodong").click(function () {
-		$("#content2").stop(true, false).animate({"top": 380}, 50);
-		$("#content3").stop(true, false).animate({"top": 380}, 50);
-		$("#content1").stop(true, false).animate({"top": 0}, 800);
-	});
-	$("#saoke").click(function () {
-		$("#content1").stop(true, false).animate({"top": 380}, 50);
-		$("#content2").stop(true, false).animate({"top": 380}, 50);
-		$("#content3").stop(true, false).animate({"top": 0}, 800);
-	});
-	$("#hehuoren").click(function () {
-		$("#content1").stop(true, false).animate({"top": 380}, 50);
-		$("#content3").stop(true, false).animate({"top": 380}, 50);
-		$("#content2").stop(true, false).animate({"top": 0}, 800);
-	});
-
-	/*选中图片浮起阴影效果*/
-	$(".pic img").mouseenter(function(){
-		$(".pic img").removeClass('imgselected');
-		$(this).addClass('imgselected');
-	});
-	$(".pic img").mouseout(function(){
-		$(this).removeClass('imgselected');
-	});
-</script>
 </body>
 </html>
