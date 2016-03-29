@@ -56,13 +56,18 @@ $("#btn-echo").click(function() {
 	$(this).css("color","red");
 });
 
-/*二维码显示*/
+/*二维码设置位置和显示*/
+var tdist=$("#page1").outerHeight(true)/3.5;
+$(".code-msg").css("top",tdist);
+$(".code-img").css("top",tdist+160);
 $(".code-sh").mouseenter(function() {
 	$(this).parent().stop(true, false).animate({"right": 0}, 500);
+	// alert(tdist);
 })
 .mouseout(function() {
 	$(this).parent().stop(true, false).animate({"right": -157}, 500);
 });
+
 
 /*主页内容和按钮状态切换*/
 $(".img").mouseenter(function(){
