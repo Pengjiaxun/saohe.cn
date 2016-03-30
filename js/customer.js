@@ -1,10 +1,9 @@
 /*滚动渐隐渐现显示导航*/
-$(window).scroll(function () {
+/*$(window).scroll(function () {
 	var t=$(document).scrollTop();
 	if(t==0){
 		$("#nav").removeClass('bgcolor');
 		$("#nav").fadeIn("fast");
-		/*$(".topr li a").css("color","#ffffff");*/
 		$(".topr li:first-child a").css("color","#c84bdf");
 	}
 	else if(t>100 && t<1040){
@@ -15,7 +14,7 @@ $(window).scroll(function () {
 		$("#nav").addClass('bgcolor');
 		$("#nav").fadeIn("fast");
 	}
-});
+});*/
 
 /*导航颜色的改变*/
 $(".topr li a").mouseenter(function(){
