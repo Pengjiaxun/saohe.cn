@@ -39,6 +39,7 @@ img{border:0}
 	display: box;
 	display: -webkit-box;
 	display: -moz-box;
+	background-color: #5B1F67;
 }
 .bgcolor{background-color:rgba(0,0,0,0.6);}
 .topl{
