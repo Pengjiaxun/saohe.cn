@@ -35,9 +35,17 @@ img{border:0}
 	width:100%;
 	min-width: 1200px;
 	height: 100px;
+<<<<<<< HEAD
 	/*top: -100px;*/
 	left:0px;
 	/*background-color: rgb(65, 20, 65);*/
+=======
+	top: 0px;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	background-color: #5B1F67;
+>>>>>>> origin/master
 }
 .bgcolor{background-color:rgba(0,0,0,0.6);}
 .btop{
@@ -487,6 +495,13 @@ img{border:0}
 	border: none;
     margin-left: 20px;
 }
+<<<<<<< HEAD
 #i1{background: url(../images/new_icon/icon_msg.png) center no-repeat;}
 #i2{background: url(../images/new_icon/icon_address.png) center no-repeat;}
 #i3{background: url(../images/new_icon/icon_service.png) center no-repeat;}
+=======
+.copyright-bottom p{
+	font-size: 0.8rem;
+	color: #ffffff
+}
+>>>>>>> origin/master
