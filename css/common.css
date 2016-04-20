@@ -21,3 +21,5 @@
 }
 /* clear 主要是用在浮动层与浮动层之间，和浮动层同一级，如果想要撑开父层的高度，clear 就要放在最后。 */
 .clear{clear: both;}
+
+a{cursor: pointer;}

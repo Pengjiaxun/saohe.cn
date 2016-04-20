@@ -1,0 +1,108 @@
+/* Banner部分 */
+.hot-head{
+	padding-top: 200px;
+	text-align: center;
+	width: 1200px;
+	margin:0 auto;
+	color: #ffffff;
+}
+.head{
+	font-size: 36px;
+	font-family: "微软雅黑";
+	letter-spacing: 0.25em;
+	margin-bottom: 50px;
+}
+/* 正文部分 */
+.hot{
+	width: 1200px;
+	min-height: 800px;
+	margin:0 auto;
+	padding-top: 100px;
+	margin-bottom: 100px;
+}
+.hot h1{
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "黑体";
+	margin-bottom: 50px;
+}
+.hot .hot-navimg{
+	position: relative;
+}
+.navimg-wrap{
+	width: 1200px;
+	height:250px;
+	border-bottom: 1px solid #dbdbdb;
+}
+.navimg-wrap li{
+	height: 180px;
+	overflow: hidden;
+}
+.hot-content{
+	padding-top: 50px;
+}
+.hot-content h2{
+	font-size: 24px;
+	font-weight: normal;
+	color:#5c3164;
+	line-height: 36px;
+}
+.hot-content >ul>li{
+	width: 600px;
+	min-height: 500px;
+}
+.hot-content .l1{
+	width: 570px;
+    padding-right: 30px;
+}
+.hot-content .l2{
+	position: relative;
+	overflow: hidden;
+	text-align: right;
+}
+.content-msg p{
+	margin-top: 20px;
+}
+#content-detail{text-indent: 2em;}
+#content-detail p{
+	text-indent: 2em;
+	line-height:
+}
+#unit { width: 2400px;height: 340px; position: absolute;top:95px;left: 0px; overflow: hidden;margin-bottom: 50px;}
+#bga,#bgb,#bgc,#bgd{float: left; width: 600px;height: 340px;}
+#bta,#btb{
+	margin-top: 460px;
+	width: 26px;
+	height: 26px;
+}
+#bta{margin-right: 15px;}
+.hot .hot-navimg .navimg-cover{
+	position: absolute;
+	top: 181px;
+	width:260px;
+	height:140px;
+	color: white;
+	background-color:#000000;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	z-index: 2;
+	padding: 20px;
+	top:0;
+}
+.hot .hot-navimg .navimg-cover p:first-child{
+	font-size: 24px;
+	font-weight: bold;
+}
+.hot .hot-navimg .navimg-cover p{
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.hot .hot-navimg .navimg-cover p i{
+	display: inline-block;
+	float: right;
+	width:26px;
+	height: 26px;
+	background: url(../images/new_icon/icon_go.png) center no-repeat;
+}
+.hot .hot-navimg .active{top:181px;}
