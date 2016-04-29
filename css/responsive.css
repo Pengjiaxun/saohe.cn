@@ -1,0 +1,21 @@
+@media screen and (max-width: 1440px) {
+    .main,.mainbg,.hot-main{
+        height:452px;
+    }
+    .mainbg{
+		width: 1366px;
+    }
+	.main-content-bottom, .bottomCover {
+	    width: 840px;
+	    height: 120px;
+	    bottom: -60px;
+	}
+	.main-content-bottom img, .bottomCover .cover{
+	    width: 120px;
+	    height: 120px;
+	    margin-right: 20px;
+	}
+	.hot-head{
+		padding-top: 120px;
+	}
+}

@@ -2,66 +2,63 @@
 <html lang="en" >
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
-	<!-- <meta name="renderer" content="webkit" /> -->
 	<title>骚盒官网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="renderer" content="webkit">
+	<meta name=”viewport” content=”width=device-width,initial-scale=1.0” />
+	<meta name="author" content="cardspay.cn">
+	<meta name="Keywords" content="骚盒官网，中高联，高商互联">
+	<meta name="Description" content="骚盒是一个共享分销平台，也是一个会赚钱的购物车。">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/respond.css">
-	<script src="js/respond/dest/respond.src.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script type="text/javascript" src="js/respond.src.js"></script>
 
 </head>
 <body>
-<a id="top"></a>
+	<a id="top"></a>
 	<!-- 最外层包裹 -->
 	<div class="container">
+		<!-- 顶部导航栏 -->
+		<div id="nav" class="top" >
+			<div class="topl fl clearfix" >
+				<a href="index.html"><img class="fl" src="images/icon/saohe_logo.png" ></a>
+				<div class="fl">
+					<p>共享分销平台</p>
+					<p>一个会赚钱的购物车</p>
+				</div>
+			</div>
+			<div class="topr fr clearfix">
+				<ul>
+					<li><a  class="fr" href="http://manage.saohe.cn/Home/Account/Index" target="view_window">登录管理后台</a></li>
+					<li><a id="btn-pro">我们承诺</a></li>
+					<li><a id="btn-manage">功能特色</a></li>
+					<li><a href="hot.html" id="btn-hot">骚盒热点</a></li>
+					<li style="width: 150px;"><a href="help.html" id="">帮助与留言</a></li>
+				</ul>
+			</div>
+		</div>
 		<!-- 页面1 -->
-		<div id="page1" class="main">
-			<div id="nav" class="top" ><!-- 顶部导航栏 -->
-				<div class="topl fl clearfix" >
-					<a href="index.html"><img class="fl" src="images/icon/saohe_logo.png" ></a>
-					<div class="fl">
-						<p>共享分销平台</p>
-						<p>一个会赚钱的购物车</p>
-					</div>
-				</div>
-				<div class="topr fr clearfix">
-					<ul>
-						<li><a  class="fr" href="http://manage.saohe.cn/Home/Account/Index" target="view_window">登录管理后台</a></li>
-						<li><a id="btn-pro">我们承诺</a></li>
-						<li><a id="btn-manage">功能特色</a></li>
-						<li><a href="hot.html" id="btn-hot">骚盒热点</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="content-wrap">
-				<!-- 页面1内容1 -->
-				<div id="content1" style="top: 0;">
-					<!-- 内容中部 -->
-					<div><img src="images/new_icon/骚董.png" alt=""></div>
-				</div>
-				<!-- 页面1内容2 -->
-				<!-- 内容顶部 -->
-				<div id="content2">
-					<!-- 内容中部 -->
-					<div><img src="images/new_icon/合伙人.png" alt=""></div>
-				</div>
-				<!-- 页面1内容3 -->
-				<div id="content3">
-					<!-- 内容中部 -->
-					<div><img src="images/new_icon/骚客.png" alt=""></div>
-				</div>
-			</div>
+		<div class="main">
+			<div class="mainbg"></div>
 			<div class="main-content-bottom"><!-- 内容底部导航 -->
-				<img class="img" id="saoke-img" src="images/icon/saoke_not.png" >
-				<img class="img" id="saodong-img" src="images/icon/saodong.png" >
-				<img class="img" id="hehuoren-img" src="images/icon/hehuoren_not.png" >
+				<img index="1" class="img" id="lianhe" src="images/icon/lianhe.png">
+				<img index="2" class="img" id="hehuo" src="images/icon/hehuo.png">
+				<img index="3" class="img" id="yunying" src="images/icon/yunying.png">
+				<img index="4" class="img" id="gonghuo" src="images/icon/gonghuo.png">
+				<img index="5" class="img" id="fenxiao" src="images/icon/fenxiao.png">
+				<img index="6" class="img" id="saofen" src="images/icon/saofen.png">
+			</div>
+			<div class="bottomCover">
+				<img src="images/icon/lianhe_not.png" index="1" class="cover vis">
+				<img src="images/icon/hehuo_not.png" index="2" class="cover">
+				<img src="images/icon/yunying_not.png" index="3" class="cover">
+				<img src="images/icon/gonghuo_not.png" index="4" class="cover">
+				<img src="images/icon/fenxiao_not.png" index="5" class="cover">
+				<img src="images/icon/saofen_not.png" index="6" class="cover">
 			</div>
 		</div>
 		<!-- 二维码扫描 -->
-		<!-- <div id="toggle" class="code-msg"></div> -->
 		<div class="code-msg">
 			<img id="code1" class="code-sh" src="images/icon/gongzhonghao2.png">
 		</div>
@@ -69,11 +66,10 @@
 			<img id="code2" class="code-sh" src="images/icon/app_download2.png">
 		</div>
 		<div class="btop"><img src="images/new_icon/icon_up.png" alt=""></div>
-
-		<!-- 中间部分包裹层 -->
-		<div class="mbox">
-			<!-- 页面2 -->
-			<div id="introduce" class="introduce">
+		<!-- 中间部分 -->
+		<!-- 页面2 -->
+		<div id="introduce" class="introduce">
+			<div class="introduceWrap">
 				<div class="introl fl">
 					<div class="intro-wrap fr">
 						<h3>骚气十足的APP</h3>
@@ -91,9 +87,10 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="line" style="position: relative;top:-13px;"></div>
-			<!-- 页面3 -->
-			<div id="manage" class="manage">
+		</div>
+		<!-- 页面3 -->
+		<div id="manage" class="manage">
+			<div class="manageWrap">
 				<div class="managel fl">
 					<img src="images/icon/pc_display_1.png">
 				</div>
@@ -112,18 +109,10 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div class="line"></div>
-			<!-- 页面4 -->
-			<div id="partner" class="partner clearfix">
-				<p class="p2">分享优品的合作伙伴</p>
-				<div class="p3">
-					<img src="images/new_icon/logo_partner.png" alt="">
-				</div>
-				<!-- <div class="clear"></div> -->
-			</div>
-			<div class="line"></div>
-			<!-- 页面5 -->
-			<div class="voice clearfix">
+		</div>
+		<!-- 页面4 -->
+		<div class="voice clearfix">
+			<div class="voiceWrap">
 				<p class="p2">他们的声音</p>
 				<div class="voicel fl">
 					<div class="voice-wrap">
@@ -131,7 +120,6 @@
 							<div class="touxiang"><img class="" src="images/h1.png" alt=""></div>
 							<div class="touxiangr">食客准备着</div>
 						</div>
-						<!-- <p class="company">珠宝</p> -->
 						<p ><span class="name">陈嘉儒</span>&nbsp;&nbsp;<span class="des">(市场总监)</span></p>
 						<div class="des">多了“骚盒”这个销售渠道，我们面对市场的面又宽广了许多</div>
 					</div>
@@ -140,7 +128,6 @@
 							<div class="touxiang"><img class="" src="images/h2.png" alt=""></div>
 							<div class="touxiangr">慕士塔各的店铺</div>
 						</div>
-						<!-- <p class="company">珠宝</p> -->
 						<p ><span class="name">林斯琪</span>&nbsp;&nbsp;<span class="des">(资深店长)</span></p>
 						<div class="des">骚盒APP，上手容易，功能强大，重要的将我店里的营业额提高了不少</div>
 					</div>
@@ -151,7 +138,6 @@
 							<div class="touxiang"><img class="" src="images/h3.png" alt=""></div>
 							<div class="touxiangr">爱心蘑菇公社</div>
 						</div>
-						<!-- <p class="company">珠宝</p> -->
 						<p ><span class="name">蔡苑芬</span>&nbsp;&nbsp;<span class="des">(白领)</span></p>
 						<div class="des">只是用了碎片时间偶尔去看看，上上产品，丰富了我的业余时间，最重要是增加了我的收入</div>
 					</div>
@@ -160,17 +146,25 @@
 							<div class="touxiang"><img class="" src="images/h4.png" alt=""></div>
 							<div class="touxiangr">时间的朋友</div>
 						</div>
-						<!-- <p class="company">珠宝</p> -->
 						<p ><span class="name">范楚楚</span>&nbsp;&nbsp;<span class="des">(国际代购)</span></p>
 						<div class="des">操作简单，功能很实用，页面很漂亮</div>
 					</div>
 				</div>
 			</div>
-			<div class="line"></div>
-			<!-- 页面6 -->
-			<div class="promise clearfix" id="ourpro">
+		</div>
+		<!-- 页面5 -->
+		<div id="partner" class="partner clearfix">
+			<div class="partnerWrap">
+				<p class="p2">分享优品的合作伙伴</p>
+				<div class="p3">
+					<img src="images/new_icon/logo_partner.png" alt="">
+				</div>
+			</div>
+		</div>
+		<!-- 页面6 -->
+		<div class="promise clearfix" id="ourpro">
+			<div class="promiseWrap">
 				<p class="p2">我们的承诺</p>
-
 				<div class="promisel fl">
 					<img src="images/icon/gongsheng.png" alt="">
 				</div>
@@ -191,7 +185,6 @@
 			<div class="copyright clearfix">
 				<ul>
 					<li class="cr-list fl" id="footer-first">
-						<!-- <h3>关于我们</h3> -->
 						<div class="guanwei">
 							<img class="normal-img" src="images/new_icon/saohe_er.png" alt="" >
 							<img class="big-img" src="images/new_icon/saohe_er_display.png" alt="" >
@@ -223,20 +216,15 @@
 							<a href="http://search.51job.com/list/040000%252C00,%2B,%2B,%2B,%2B,%2B,%25C9%25EE%25DB%25DA%25CA%25D0%25D6%25D0%25B8%25DF%25C1%25AA%25CD%25F8%25C2%25E7%25BF%25C6%25BC%25BC%25B9%25C9%25B7%25DD%25D3%25D0%25CF%25DE%25B9%25AB%25CB%25BE,1,%2B.html?lang=c&stype=1&specialarea=00" target="_blank"><img class="hunter" src="images/new_icon/51.png" alt=""></a>
 							<a href="http://www.lagou.com/gongsi/j114136.html " target="_blank"><img class="hunter" src="images/new_icon/lagou.png" alt=""></a>
 							<a href="http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E6%B7%B1%E5%9C%B3&kw=%E6%B7%B1%E5%9C%B3%E5%B8%82%E4%B8%AD%E9%AB%98%E8%81%94%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80&sm=0&p=1
-" target="_blank"><img class="hunter" src="images/new_icon/zhilian.png" alt=""></a>
+							" target="_blank"><img class="hunter" src="images/new_icon/zhilian.png" alt=""></a>
 						</p>
 					</li>
-					<!-- <div class="clear"></div> -->
 				</ul>
 			</div>
 		</div>
-		<!-- <div class="bottom-line"></div> -->
 	</div>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/customer.js"></script>
-	<script type="text/javascript">
 
-
-	</script>
 </body>
 </html>

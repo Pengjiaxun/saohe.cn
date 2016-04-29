@@ -10,28 +10,29 @@
 	font-size: 36px;
 	font-family: "微软雅黑";
 	letter-spacing: 0.25em;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 /* 正文部分 */
 .hot{
 	width: 1200px;
 	min-height: 800px;
-	margin:0 auto;
-	padding-top: 100px;
-	margin-bottom: 100px;
+	margin:80px auto;
+
 }
-.hot h1{
-	font-size: 30px;
+.hot h1,.review h2{
+	font-size: 28px;
+	color:#5c3164;
 	font-weight: normal;
 	font-family: "黑体";
 	margin-bottom: 50px;
 }
 .hot .hot-navimg{
 	position: relative;
+	cursor: pointer;
 }
 .navimg-wrap{
 	width: 1200px;
-	height:250px;
+	height:220px;
 	border-bottom: 1px solid #dbdbdb;
 }
 .navimg-wrap li{
@@ -47,26 +48,30 @@
 	color:#5c3164;
 	line-height: 36px;
 }
+/*.hot-content h2 a:hover{border-bottom: 1px solid #5c3164;}*/
+#content-title{font-size: 20px;margin-bottom:40px;}
 .hot-content >ul>li{
 	width: 600px;
 	min-height: 500px;
 }
 .hot-content .l1{
 	width: 570px;
-    padding-right: 30px;
+	padding-right: 30px;
 }
 .hot-content .l2{
 	position: relative;
 	overflow: hidden;
 	text-align: right;
+	top: 115px;
 }
 .content-msg p{
 	margin-top: 20px;
 }
-#content-detail{text-indent: 2em;}
-#content-detail p{
-	text-indent: 2em;
-	line-height:
+#content-detail p,.reviewList li p{
+    line-height: 26px;
+    font-family: Arial,Helvetica,'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+    font-size: 16px;
+    color: #444;
 }
 #unit { width: 2400px;height: 340px; position: absolute;top:95px;left: 0px; overflow: hidden;margin-bottom: 50px;}
 #bga,#bgb,#bgc,#bgd{float: left; width: 600px;height: 340px;}
@@ -106,3 +111,136 @@
 	background: url(../images/new_icon/icon_go.png) center no-repeat;
 }
 .hot .hot-navimg .active{top:181px;}
+
+/* 轮播图 */
+#container { width: 600px; height: 400px; /*border: 3px solid #333; */overflow: hidden; position: relative;}
+#list { width: 3600px; height: 400px; position: absolute; z-index: 1;}
+#list img { float: left;}
+#buttons {
+	position: absolute;
+    height: 10px;
+    width: 70px;
+    z-index: 2;
+    top: 310px;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: orangered;}
+.arrow { cursor: pointer; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 360px; }
+/*.arrow:hover { background-color: RGBA(0,0,0,.7);}*/
+#container:hover .arrow { display: block;}
+#prev { right: 40px;}
+#next { right: 0px;}
+
+/* 骚事回顾 */
+.review{
+	width: 1200px;
+	height: 200px;
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+.reviewList{
+	margin: 40px 0 50px 0;
+}
+.reviewList li{
+	float: left;
+	width:340px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	font-size: 22px!important;
+	/*list-style-type:disc;*/
+}
+.reviewList li a{
+	display: inline-block;
+	width:340px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.reviewList li a{color:#666666;}
+.reviewList li a:hover{
+	color:#6a4771;
+	cursor: pointer;
+	border-bottom: 1px solid #5c3164;
+}
+.reviewList li:last-child{
+	margin-right: 0;
+}
+
+/* 骚事内容详情 */
+.saoshiDetail{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding-bottom: 100px;
+	text-align: center;
+
+}
+.saoshiTitle,.saoshiContent{
+	width: 850px;
+	height: 150px;
+	margin: 0 auto;
+	position: relative;
+}
+.saoshiContent{
+	height: 100%;
+}
+.saoshiBottom{
+	width: 850px;
+	height: 145px;
+	margin: 0 auto;
+	position: relative;
+}
+.saoshiCutline{
+	width: 1200px;
+	height: 1px;
+	margin: 0 auto;
+	border-bottom: 1px solid #dbdbdb;
+}
+.saoshiDetail h1{
+	font-size: 28px;
+	color:#333333;
+	font-weight: normal;
+	margin-bottom: 30px;
+}
+.saoshiDetail h2{
+	font-size: 14px;
+	color:#333333;
+	font-weight: normal;
+
+}
+.contPre,.contNext{
+	position: absolute;
+	margin:20px 0;
+}
+.contPre a,.contNext a{
+	font-size: 18px;
+	color: #5c3164;
+}
+
+.contPre{left: 0;}
+.contNext{right: 0;}
+.none a{
+	cursor: default;
+	color: #666666;
+}
+.saoshiContent{
+	padding: 40px 0;
+}
+.imgDes{
+	text-align: center;
+	font-size:18px;
+	margin:20px 0 35px 0;
+}
+.saoshiContent .content{
+	width: 800px;
+    margin: 0 auto;
+	font-size: 18px;
+    line-height: 25px;
+	text-align: left;
+	color:#666666;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
