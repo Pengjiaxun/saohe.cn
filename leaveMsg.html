@@ -25,9 +25,9 @@
 		<div class="topr fr clearfix">
 			<ul>
 				<li><a  class="fr" href="http://manage.saohe.cn/Home/Account/Index" target="view_window">登录管理后台</a></li>
-					<!-- <li><a id="btn-pro">我们承诺</a></li>
-					<li><a id="btn-manage">功能特色</a></li> -->
-					<li><a id="btn-leaveMsg" href="help.html">帮助中心</a></li>
+<!--<li><a href=".html" class="joinin">申请入驻</a></li>-->
+<li><a href="hot.html" id="btn-hot">骚盒热点</a></li>
+<li><a href="help.html" id="">帮助中心</a></li>
 				</ul>
 			</div>
 		</div>
@@ -89,7 +89,7 @@
 					$.ajax({
 					type : "Post",
 					url : "http://192.168.0.89:85/Comment/OpinionFeedback/OpinionFeedbackFromOffcialWebCreatePost",
-					data: {Feedback:"a"},
+					data: {Feedback:msg},
 					dataType : "json",
 					success : function(json){
 						if (json.Success == true) {

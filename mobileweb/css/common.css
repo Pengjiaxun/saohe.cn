@@ -1,0 +1,46 @@
+@charset "utf-8";
+html,
+body {
+  font-family: "黑体", Verdana, Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}
+.bgwhite {
+  background-color: #fff;
+}
+.container {
+  background-color: #f1f3f7;
+}
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #83267b;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}

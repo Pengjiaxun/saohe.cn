@@ -1,0 +1,245 @@
+@charset "utf-8";
+html,
+body {
+  font-family: "黑体", Verdana, Arial, Helvetica, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+input,
+select,
+textarea {
+  outline: none;
+  border: none;
+  background: none;
+}
+textarea {
+  resize: none;
+}
+a {
+  text-decoration: none;
+}
+.tl {
+  text-align: left;
+}
+.tr {
+  text-align: right;
+}
+.tc {
+  text-align: center;
+}
+.bgwhite {
+  background-color: #fff;
+}
+.container {
+  background-color: #f1f3f7;
+}
+.btn {
+  display: inline-block;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #83267b;
+  padding: 5px;
+  color: #ffffff;
+  font-size: 14px;
+}
+header {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  background-color: #fff;
+}
+header .app,
+header .manage {
+  display: inline-block;
+  text-align: left;
+}
+header .app p,
+header .manage p {
+  font-size: 13px;
+}
+header .app .btn,
+header .manage .btn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0;
+  margin-top: 5px;
+}
+header .app .btgray,
+header .manage .btgray {
+  background-color: #3d3d3d;
+}
+header .htop {
+  margin-bottom: 15px;
+}
+header .htop p {
+  font-size: 13px;
+  color: #83267b;
+}
+header .app {
+  margin-right: 30px;
+}
+.title_icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url(../images/icon_title_decorate.png) center no-repeat;
+  background-size: 12px 12px;
+  margin-right: 5px;
+}
+.title {
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #666666;
+}
+.subtitlebox {
+  background-color: #fff;
+  padding: 25px 15px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+.subtitlebox .subtitle_intro {
+  display: inline-block;
+  height: 102px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.subtitlebox .subtitle_intro .subtitle {
+  text-align: left;
+  font-size: 15px;
+  color: #3d3d3d;
+}
+.subtitlebox .subtitle_intro .subtitle_info {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #666666;
+}
+.subtitlebox .sr {
+  width: 169px;
+  padding: 0;
+  height: auto;
+}
+.rolelist .role {
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.rolelist li {
+  display: block;
+}
+.rolelist li h4 {
+  position: relative;
+}
+.rolelist li h4 .arrow_down {
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 8px;
+  top: 50%;
+  margin-top: -3.5px;
+  right: 15px;
+  background: url(../images/icon_down.png) center no-repeat;
+  background-size: 15px 8px;
+}
+.rolelist li .role_info {
+  display: none;
+  color: #666666;
+  font-size: 13px;
+}
+.role_line {
+  width: 20px;
+  height: 1px;
+  border-bottom: 1px solid #000;
+  margin: 3px 0;
+}
+.show {
+  display: block!important;
+}
+.arrow_up {
+  background: url(../images/icon_down_purple.png) center no-repeat !important;
+  background-size: 15px 8px!important;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+      transform: rotate(180deg);
+}
+.ui-list {
+  border-top: 1px solid #ccc!important;
+  border-bottom: 1px solid #ccc!important;
+  background-image: none;
+}
+.ui-list .ui-border-t {
+  border-bottom: 1px solid #ccc!important;
+  background-image: none!important;
+}
+.ui-list .ui-border-t:last-child {
+  border-bottom: none!important;
+}
+.ui-list .ui-border-t .ui-avatar {
+  width: 60px;
+  height: 60px;
+}
+.ui-list .ui-border-t label {
+  font-size: 12px;
+  padding: 0 10px;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+}
+.ui-list .ui-border-t label:before {
+  border: none;
+}
+.ui-list .ui-border-t .tx {
+  border-radius: 0;
+}
+.ui-list .ui-border-t .tx span {
+  border-radius: 0;
+}
+.ui-list .ui-border-t .ui-list-info h4 {
+  font-weight: bold;
+  font-size: 15px;
+  color: #1a1a1a;
+}
+.ui-list .ui-border-t .ui-list-info li {
+  font-size: 13px;
+  color: #666666;
+}
+.ui-list .ui-border-t #gongsheng {
+  background-color: #e84c3d;
+}
+.ui-list .ui-border-t #gongxiang {
+  background-color: #1bbc9b;
+}
+.ui-list .ui-border-t #gongying {
+  background-color: #3598db;
+}
+.ui-list .ui-border-t #kouhao {
+  background-color: #a645ce;
+}
+.ui-list .promise {
+  padding: 8px 0;
+}
+.ui-list .promise span {
+  display: inline-block;
+  font-size: 13px;
+}
+.partner_img {
+  background-color: #fff;
+  padding: 15px;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.partner_img img {
+  width: 344px;
+  height: 126px;
+}
+footer {
+  text-align: center;
+  font-size: 11px;
+  color: #3d3d3d;
+  padding: 60px 0 15px 0;
+}

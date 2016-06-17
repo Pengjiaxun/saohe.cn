@@ -1,0 +1,213 @@
+﻿.wrap{
+	width:800px;margin:50px auto;
+}
+#wrap_nav{
+	width:800px;
+	height:40px;
+}
+#wrap_nav ul li{
+	float:left;
+	font-size:20px;
+	width:200px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	color:#999;
+}
+#wrap_nav .tab_one{background:url("../images/tab/1.png") no-repeat center;color:#fff;background-size:200px 40px;}
+#wrap_nav .tab_two{background:url("../images/tab/2_1.png") no-repeat center;background-size:200px 40px;}
+#wrap_nav .tab_three{background:url("../images/tab/2_1.png") no-repeat center;background-size:200px 40px;}
+#wrap_nav .tab_four{background:url("../images/tab/4_1.png") no-repeat center;background-size:200px 40px;}
+.tab_list{
+	width:585px;
+	margin:40px auto;
+}
+.tab_list ul li{
+	margin:30px 0;
+}
+.tab_list ul li input,.tab_list ul li select{
+	font-size:16px;
+	text-indent:10px;
+	width:370px;
+	height:30px;
+	margin-left:40px;
+}
+select{
+	color:#999;
+}
+.tab_list ul li span{
+	width:120px;
+	text-align:right;
+	display:inline-block;
+}
+.tab_list select .option{
+	color:#999;
+}
+.btns{
+	font-size:16px;
+	display:block;
+	width:300px;
+	height:40px;
+	color:#fff;
+	margin:0 auto;
+	outline:none;
+	border:none;
+	background:#9B5195;
+	border-radius:5px;
+}
+.btns:hover{background:#A52691;}
+.input_test{
+	width:260px!important;
+}
+#btutton_test{
+	height:34px;
+	color:#999;
+	width:100px;
+	margin:0 0 0 10px;
+	text-indent:0;
+	background:#fff;
+	border:1px solid #999;
+}
+
+#step_two .select{
+	width:250px;
+	margin:30px auto;
+
+}
+#step_two label{
+	margin:35px;
+}
+.person_card{
+	position:absolute;
+	top:0;
+	left:155px;
+	display:inline-block;
+	width:450px;
+	height:200px;
+}
+.P_common{
+	position:relative;
+}
+.obverse,.reverse{
+	display:inline-block;
+	width:200px;
+	height:150px;
+	border:1px solid #999;
+}
+.P_common .card{
+	position:absolute;
+	top:155px;
+	left:35px;
+}
+.P_common .t_btn{
+	position:absolute;
+	top:185px;
+	left:12px;
+}
+.tab_list ul li .t_btn{
+	text-indent:0;
+	width:100px;
+	height:30px;
+}
+.tab_list .last{
+	position:relative;
+	width:900px;
+}
+.tab_list .last .t_last{
+	position:absolute;
+	top:0;
+}
+.person_card .P_common{
+	margin-right:20px;
+}
+#btn_three{
+margin-top:285px
+}
+#step_three p{text-align:center;margin-top:20px;}
+#step_three_company p{text-align:center;margin-top:20px;}
+/*企业*/
+.tab_list .company_last .t_last{
+	position:absolute;
+	top:235px;
+}
+.tab_list .company_last{
+	position:relative;
+	width:900px;
+}
+.company_card{
+	position:absolute;
+	top:240px;
+	left:155px;
+	display:inline-block;
+	width:900px;
+	height:200px;
+}
+.company_card .P_common{
+	margin-right:20px;
+}
+#btns_three{
+margin-top:520px
+}
+/*第四步*/
+.t_success{
+	font-size:30px;
+	color:#00BC60;
+	margin-left:10px;
+	text-align:center;
+}
+.success{
+	margin-left:100px;
+}
+.tab_list .clear{
+	margin-bottom:60px;
+	color:#6F6F6F;
+	line-height:30px;
+	text-align:center;
+}
+.tab_list .content{
+	border:1px solid #999;
+	border-radius:4px;
+
+}
+.content .t_head{
+	padding-left:10px;
+	color:red;
+	line-height:30px;
+}
+.tab_list .content .middle{
+	width:440px;
+	margin:0 auto;
+	font-size:20px!important;
+	line-height:30px;
+	margin-bottom:20px;
+}
+.content .t_top{
+	line-height:50px;
+	text-align:center;
+}
+.t_middle span{
+	color:#999;
+	display:inline-block;
+	text-align:right;
+	width:100px;
+	margin-right:20px;
+}
+.content .t_bottom{
+	color:#000;
+	text-align:right;
+	line-height:50px;
+	padding-right:10px;
+}
+.t_foot{
+	color:#AFAFAF;
+	text-align:center;
+	line-height:50px;
+	font-size:20px;
+}
+
+.font_big{
+	font-size:20px;
+}
+
+
+

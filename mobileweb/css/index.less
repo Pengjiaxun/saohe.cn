@@ -1,0 +1,186 @@
+@charset "utf-8";
+@import "common.less";
+//变量定义
+@t_size:14px;
+header{
+	padding: 20px;
+	border-bottom:1px solid #ccc;
+	.tc;
+	.bgwhite;
+	.app,.manage{
+		display: inline-block;
+		.tl;
+		p{
+			font-size: 13px;
+		}
+		.btn{
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 14px;
+			padding: 0;
+			margin-top:5px;
+		}
+		.btgray{background-color:#3d3d3d;}
+	}
+	.htop{
+		margin-bottom: 15px;
+		p{
+			font-size: 13px;
+			color: @purple;
+		}
+	}
+	.app{margin-right: 30px;}
+}
+.title_icon{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../images/icon_title_decorate.png) center no-repeat;
+	background-size: 12px 12px; 
+	margin-right: 5px;
+}
+.title{
+	padding:5px 15px; 
+	font-size:@t_size;
+	color:#666666;
+}
+.subtitlebox{
+	.bgwhite;
+	padding:25px 15px;
+	border-top: 1px solid #ccc;
+	.tc;
+	.subtitle_intro{
+		display: inline-block;
+		height: 102px;
+	    padding: 15px;
+	    box-sizing: border-box;
+		.subtitle{
+			.tl;
+			font-size: 15px;
+			color: #3d3d3d;
+		}
+		.subtitle_info{
+			.tl;
+			margin-top: 15px;
+			font-size: 13px;
+			color: #666666;
+		}
+	}
+	.sr{
+		width: 169px;
+		padding: 0;
+		height: auto;
+	}
+	.subtitle_left{
+	}
+}
+.rolelist{
+	.role{
+		font-size: 15px;
+		color: #1a1a1a;
+	}
+	li{
+		display: block;
+		h4{
+			position: relative;
+			.arrow_down{
+			    display: block;
+			    position: absolute;
+			    width: 15px;
+			    height: 8px;
+			    top: 50%;
+			    margin-top: -3.5px;
+			    right: 15px;
+			    background: url(../images/icon_down.png)center no-repeat;
+			    background-size: 15px 8px;
+			}
+		}
+		.role_info{
+			display: none;
+			color: #666666;
+			font-size: 13px;
+		}
+	}
+}
+.role_line{
+	width: 20px;
+	height: 1px;
+	border-bottom:1px solid #000;
+	margin:3px 0;
+}
+.show{display:block!important;}
+.arrow_up{
+	background: url(../images/icon_down_purple.png)center no-repeat!important;
+	background-size: 15px 8px!important;
+	-webkit-transform: rotate(180deg);
+  	transform: rotate(180deg);
+}
+.ui-list{
+	border-top: 1px solid #ccc!important;
+	border-bottom: 1px solid #ccc!important;
+	background-image:none;
+	.ui-border-t{
+		border-bottom: 1px solid #ccc!important;
+		&:last-child{border-bottom:none!important;}
+		background-image:none!important;
+		.ui-avatar{
+			width: 60px;
+			height: 60px;
+		}
+		label{
+			font-size: 12px;
+			padding:0 10px;
+			height: 20px;
+			line-height: 20px;
+			color:#fff;
+			&:before{
+				border:none;
+			}
+		}
+		.tx{
+			border-radius: 0;
+			span{border-radius: 0;}
+		}
+		.ui-list-info{
+			h4{
+				font-weight: bold;
+				font-size: 15px;
+				color: #1a1a1a;
+			}
+			li{
+				font-size: 13px;
+				color: #666666;
+			}
+		}
+		#gongsheng{background-color: #e84c3d;}
+		#gongxiang{background-color: #1bbc9b;}
+		#gongying{background-color: #3598db;}
+		#kouhao{background-color: #a645ce;}
+	}
+	.promise{
+		padding: 8px 0;
+		span{
+			display: inline-block;
+			font-size: 13px;
+		}
+	}
+}
+.partner_img{
+	.bgwhite;
+	padding: 15px;
+	margin: 0 auto;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	.tc;
+	img{
+		width: 344px;
+		height: 126px;
+	}
+}
+footer{
+	.tc;
+	font-size: 11px;
+	color: #3d3d3d;
+	padding: 60px 0 15px 0;
+}

@@ -1,0 +1,10 @@
+@media screen and (max-width:320px){
+	.ui-list .promise #kouhao_last {
+		width: 255px;
+		vertical-align: top;
+	}
+	.partner_img img{
+		width:290px;
+	}
+	.subtitlebox .sr{width:132px;}	
+}

@@ -15,20 +15,7 @@ $(".topr li:first-child a").mouseenter(function(){
 });
 
 /*导航栏锚点平滑滚动*/
-$("#btn-manage").click(function() {
-	$("html,body").animate({scrollTop:$("#introduce").offset().top}, 500);
-	$(".topr li a").css("color","#ffffff");
-	$(".topr li:first-child a").css("color","#c84bdf");
-	// $(".topr li:first-child a").css("color","#c84bdf");
-	$(this).css("color","red");
-});
-$("#btn-pro").click(function() {
-	$("html,body").animate({scrollTop:$("#ourpro").offset().top}, 500);
-	$(".topr li a").css("color","#ffffff");
-	$(".topr li:first-child a").css("color","#c84bdf");
-	// $(".topr li:first-child a").css("color","#c84bdf");
-	$(this).css("color","red");
-});
+
 $(".btop").click(function() {
 	$("html,body").animate({scrollTop:$("#top").offset().top}, 500);
 });
@@ -111,14 +98,20 @@ $(document).ready(function() {
 });
 /*底部版权二维码缩放*/
 $(".normal-img").mouseenter(function() {
-	$(".big-img").stop().fadeIn('fast');
+	$(".big-img").stop(true,false).fadeIn('fast');
 })
 .mouseout(function() {
-	$(".big-img").stop().fadeOut('fast');
+	$(".big-img").stop(true,false).fadeOut('fast');
 });
 
+$(".app-normal-img").mouseenter(function() {
+	$(".app-big-img").stop().fadeIn('fast');
+})
+.mouseout(function() {
+	$(".app-big-img").stop().fadeOut('fast');
+});
 
-$("#focus-us").mouseenter(function(){
+$("#focus-us,#chatQQ").mouseenter(function(){
 	$(this).css("box-shadow","1px 1px 10px #c84bdf");
 })
 .mouseout(function(){
